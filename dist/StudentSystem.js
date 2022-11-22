@@ -46,11 +46,11 @@ export class StudentMSystem {
         }
     }
     showStatus(enrollNo) {
-        console.log(chalk.bold.blue(`Your name is: ${this.studentList[enrollNo].name}`));
-        console.log(chalk.bold.blue(`Your StdID is: ${this.studentList[enrollNo].id}`));
-        console.log(chalk.bold.blue(`Courses Enrolled: ${this.studentList[enrollNo].coursesEnrolled.toString()}`));
-        console.log(chalk.bold.blue(`Balance: ${this.studentList[enrollNo].balance}`));
-        console.log(chalk.bold.blue(`If your balance is 0 it means you have paid all your fees`));
+        console.log(chalk.bold.yellow(`\tYour name is: ${this.studentList[enrollNo].name}`));
+        console.log(chalk.bold.yellow(`\tYour StdID is: ${this.studentList[enrollNo].id}`));
+        console.log(chalk.bold.yellow(`\tCourses Enrolled: ${this.studentList[enrollNo].coursesEnrolled.toString()}`));
+        console.log(chalk.bold.yellow(`\tBalance: ${this.studentList[enrollNo].balance}`));
+        console.log(chalk.bold.yellow(`\tIf your balance is 0 it means you have paid all your fees`));
     }
     logIn(enrNO, id) {
         if (this.studentList[enrNO].id == id) {

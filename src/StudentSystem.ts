@@ -66,15 +66,15 @@ export class StudentMSystem {
   }
 
   public showStatus(enrollNo: number): void {
-    console.log(chalk.bold.blue(`Your name is: ${this.studentList[enrollNo].name}`));
-    console.log(chalk.bold.blue(`Your StdID is: ${this.studentList[enrollNo].id}`));
+    console.log(chalk.bold.yellow(`\tYour name is: ${this.studentList[enrollNo].name}`));
+    console.log(chalk.bold.yellow(`\tYour StdID is: ${this.studentList[enrollNo].id}`));
     console.log(
-      chalk.bold.blue(`Courses Enrolled: ${this.studentList[
+      chalk.bold.yellow(`\tCourses Enrolled: ${this.studentList[
         enrollNo
       ].coursesEnrolled.toString()}`)
     );
-    console.log(chalk.bold.blue(`Balance: ${this.studentList[enrollNo].balance}`));
-    console.log(chalk.bold.blue(`If your balance is 0 it means you have paid all your fees`));
+    console.log(chalk.bold.yellow(`\tBalance: ${this.studentList[enrollNo].balance}`));
+    console.log(chalk.bold.yellow(`\t(If your balance is 0 it means you have paid all your fees)`));
   }
 
   public logIn(enrNO: number, id: string): void {
